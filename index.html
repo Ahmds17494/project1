@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="main.css">
+
+
+
+
+<body>
+    <div class="div1">
+
+    
+        <nav>
+            <ul>
+                <li><a href=""><b>Home</b> </a> </li>
+                
+                <li><a href=""><b>Service</b> </a> </li>
+                
+                <li><a href=""><b>Promotions</b> </a> </li>
+                <li><a href=""><b>Market Area</b> </a> </li>
+                <li><a href=""><b>Market Ingormation</b> </a> </li>
+            </ul>
+        </nav>
+    
+    
+    </div>
+
+<h2 style="text-align:center">The best tourist offers at the cheapest prices</h2>
+
+<div class="row">
+  <div class="column">
+    <img src="paris.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="newyork.jpg" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="bsali.jpg" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="dubai.jpg" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="baghdad.jpg" style="width:100%" onclick="openModal();currentSlide(5)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="mallorca.jpg" style="width:100%" onclick="openModal();currentSlide(6)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="lattakia.jpg" style="width:100%" onclick="openModal();currentSlide(7)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="beirut.jpg" style="width:100%" onclick="openModal();currentSlide(8)" class="hover-shadow cursor">
+  </div>
+</div>
+
+<div id="myModal" class="modal">
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+  <div class="modal-content">
+
+    <div class="mySlides">
+      <div class="numbertext">1 / 8</div>
+      <img src="paris.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">2 / 8</div>
+      <img src="newyork.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">3 / 8</div>
+      <img src="bsali.jpg" style="width:100%">
+    </div>
+    
+    <div class="mySlides">
+      <div class="numbertext">4 / 8</div>
+      <img src="dubai.jpg" style="width:100%">
+    </div>
+    <div class="mySlides">
+     <div class="numbertext">5 / 8</div>
+        <img src="baghdad.jpg" style="width:100%">
+      </div>
+      <div class="mySlides">
+        <div class="numbertext">6 / 8</div>
+        <img src="lattakia.jpg" style="width:100%">
+      </div>
+      <div class="mySlides">
+        <div class="numbertext">7 / 8</div>
+        <img src="mallorca.jpg" style="width:100%">
+      </div>
+      <div class="mySlides">
+        <div class="numbertext">8 / 8</div>
+        <img src="beirut.jpg" style="width:100%">
+      </div>
+    
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+
+
+    <div class="column">
+      <img class="demo cursor" src="paris.jpg" style="width:100%" onclick="currentSlide(1)" alt="Paris">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="newyork.jpg" style="width:100%" onclick="currentSlide(2)" alt="newyork">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="bsali.jpg" style="width:100%" onclick="currentSlide(3)" alt="Bali">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="dubai.jpg" style="width:100%" onclick="currentSlide(4)" alt="dubai">
+    </div>
+    <div class="column">
+        <img class="demo cursor" src="baghdad.jpg" style="width:100%" onclick="currentSlide(5)" alt="baghdad">
+     </div>
+    <div class="column">
+        <img class="demo cursor" src="lattakia.jpg" style="width:100%" onclick="currentSlide(6)" alt="lattakia">
+      </div> 
+      <div class="column">
+        <img class="demo cursor" src="mallorca.jpg" style="width:100%" onclick="currentSlide(7)" alt="mallorca">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="beirut.jpg" style="width:100%" onclick="currentSlide(8)" alt="beirut">
+      </div>    
+  </div>
+</div>
+
+<script src="lightbox.js"></script>
+    
+</body>
+</html>
