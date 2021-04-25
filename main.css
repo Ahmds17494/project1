@@ -4,9 +4,9 @@
   font-family: 'Poppins', sans-serif;
 }
 nav{
-    width: 100%;
-    
-    background-image: linear-gradient(blue,white);
+  width: 100%;
+  
+  background-image: linear-gradient(blue,white);
 }
 
 
@@ -14,39 +14,43 @@ nav{
 
 
 .div1 nav ul{
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  
-  display: flex;
-  justify-content: flex-end;
- /* justify-content: space-around; */
+list-style-type: none;
+margin: 0;
+padding: 0;
+
+display: flex;
+justify-content: flex-end;
+/* justify-content: space-around; */
 }
 .div1 nav ul li{
-    padding: 14px;
-  cursor: pointer;
-  
-  
-  
+  padding: 14px;
+cursor: pointer;
+
+
+
 }
 .div1 nav ul li:hover{
-    background-color: #555;
-  color: white;
-  background-image: linear-gradient(blue,rgb(157, 157, 196));
+  background-color: #555;
+color: white;
+background-image: linear-gradient(blue,rgb(157, 157, 196));
 }
 
 .div1 nav ul li a {
-    
-    padding: 14px;
-    text-decoration: none;
- 
-    }
+  
+  padding: 14px;
+  text-decoration: none;
 
-    .div1 nav ul li a b {
-    
-    
-     color: black;     
-        }
+  }
+
+  .div1 nav ul li a b {
+  
+  
+    font-size: 18px;
+        font-weight: 800;
+        color: #fff;
+        line-height: 1em;
+        text-transform: uppercase;    
+      }
 
 
 body {
@@ -264,14 +268,33 @@ main{
   padding: 15px 5px;
 }
 footer{
-  padding: 50px;
-  margin-top: 0px;
-    text-align: center;
-       background: rgb(65, 68, 68);
-  background: linear-gradient(90deg, rgb(74, 122, 128) 15%, rgb(119, 118, 98) 100%);
-  background-image: url(diego-ph-5LOhydOtTKU-unsplash.jpg);
-  background-position:bottom;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  
+  padding: 30px;
+  background-color: #555;
+  margin: 10px;
 }
+.footer3{
+list-style-type: none;
+margin: 0;
+padding: 0;
+
+justify-content: space-evenly;
+
+display: flex;
+justify-content: flex-end;
+ 
+  
+  
+}
+
+.footer3 li{
+  padding: 20px;
+}
+
 
 .button
 {
@@ -290,6 +313,8 @@ transition: 0.2s;
 }
 
 
+
+  
 
 
 @media all and (max-width: 600px) {
@@ -313,7 +338,5 @@ transition: 0.2s;
   
 
 }
-
-
 
 
