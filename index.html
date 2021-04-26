@@ -1,7 +1,11 @@
 <!DOCTYPE html>
 <html>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="main.css">
+
+<title>Travel & Tour's</title>
 
 
 
@@ -17,11 +21,11 @@
             <ul>
                 <li><a href="video.html"><b>Home</b> </a> </li>
                 
-                <li><a href=""><b>Service</b> </a> </li>
+                <li><a href="#"><b>Service</b> </a> </li>
                 
-                <li><a href=""><b>Promotions</b> </a> </li>
-                <li><a href=""><b>Market Area</b> </a> </li>
-                <li><a href=""><b>Market Ingormation</b> </a> </li>
+                <li><a href="index.html"><b>Promotions</b> </a> </li>
+                <li><a href="post.html"><b>Market Area</b> </a> </li>
+                <li><a href="#foo"><b>Market Ingormation</b> </a> </li>
             </ul>
         </nav>
     
@@ -134,10 +138,12 @@
   </div>
 </div>
 
+
+
 <main id="Programs">
-  <div style="text-align: center;padding-bottom: 30px;">
-       <h1>Choose You'r Program</h1>
-           <h3>*Choose Now And Get 25% Discount*</h3></div>
+  <div style="text-align: center;">
+    <a href="post.html"><img src='book.png' width="500px" height="100px"/></a>
+    </div>
          <div class="containerx" >
        <div class="container1">
        <div class="flip-card">
@@ -150,7 +156,7 @@
            <p>Lorem ipsum dolor sit amet 
                consectetur adipisicing elit. Dolorum at tempora minima est fugiat nam repellendus. Fugit perspiciatis esse atque.......</p>
                <br>
-               <a href="post.html" class="button">Read More</a>
+               <a href="post.html#ProgramOne" class="smooth-goto button" >Read More</a>
            </div>
        </div>
        </div>
@@ -167,7 +173,7 @@
            <p>Lorem ipsum dolor sit amet consectetur a
                dipisicing elit. Dolorum at tempora minima est fugiat nam repellendus. Fugit perspiciatis esse atque......</p>
                <br>
-               <a href="#" class="button">Read More</a>
+               <a href="post.html#ProgramTwo" class="smooth-goto button" >Read More</a>
            </div>
        </div>
 </div>
@@ -183,7 +189,7 @@
            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum at tempora minima est 
                fugiat nam repellendus. Fugit perspiciatis esse atque.......</p>
                <br>
-               <a href="#" class="button">Read More</a>
+               <a href="post.html#ProgramThree" class="smooth-goto button" >Read More</a>
            </div>
        </div>
        </div>
@@ -200,7 +206,7 @@
                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum at tem
                    pora minima est fugiat nam repellendus. Fugit perspiciatis esse atque.......</p>
                    <br>
-                   <a href="#" class="button">Read More</a>
+                   <a href="post.html#ProgramFour" class="smooth-goto button" >Read More</a>
                </div>
            </div>
            </div>
@@ -219,7 +225,7 @@
            <p>Lorem ipsum dolor sit amet 
                consectetur adipisicing elit. Dolorum at tempora minima est fugiat nam repellendus. Fugit perspiciatis esse atque.......</p>
                <br>
-               <a href="post.html" class="button">Read More</a>
+               <a href="post.html#ProgramFive" class="smooth-goto button" >Read More</a>
            </div>
        </div>
        </div>
@@ -235,7 +241,7 @@
            <p>Lorem ipsum dolor sit amet 
                consectetur adipisicing elit. Dolorum at tempora minima est fugiat nam repellendus. Fugit perspiciatis esse atque.......</p>
                <br>
-               <a href="post.html" class="button">Read More</a>
+               <a href="post.html#ProgramSix" class="smooth-goto button" >Read More</a>
            </div>
        </div>
        </div>
@@ -251,7 +257,7 @@
            <p>Lorem ipsum dolor sit amet 
                consectetur adipisicing elit. Dolorum at tempora minima est fugiat nam repellendus. Fugit perspiciatis esse atque.......</p>
                <br>
-               <a href="post.html" class="button">Read More</a>
+               <a href="post.html#ProgramSeven" class="smooth-goto button" >Read More</a>
            </div>
        </div>
        </div>
@@ -260,14 +266,14 @@
        <div class="flip-card">
        <div class="flip-card-inner">
            <div class="flip-card-front">
-           <img src="img8.jpg" alt="Avatar" style="width:300px;height:300px;">
+           <img src="img8.jpg" alt="Avatar" style="width:300px;height:300px; " >
            </div>
            <div class="flip-card-back">
            <h1>Program One</h1> 
            <p>Lorem ipsum dolor sit amet 
                consectetur adipisicing elit. Dolorum at tempora minima est fugiat nam repellendus. Fugit perspiciatis esse atque.......</p>
                <br>
-               <a href="post.html" class="button">Read More</a>
+               <a href="post.html#ProgramEight" class="smooth-goto button" >Read More</a>
            </div>
        </div>
        </div>
@@ -276,14 +282,15 @@
 
 </main>
 
-
-<footer class="Fotter">
+<div id="foo">
+<footer  class="Fotter">
   <div class="footer1">
     <h2>Travel</h2>
     <h5>Created by: <span style="font-style: italic;">Ahmad & Moaz</span> </h5>
    
    
   </div>
+  <div></div>
   <div class="footer2">
     <h3>Emails</h3>
     <p>ahmds17494@gmail.com</p>
@@ -297,7 +304,7 @@
     </ul>
   </div>
 </footer>
-
+</div>
 
 
 
@@ -341,6 +348,11 @@ $(document).ready(function(){
  });
 });
 </script>
+
+<script>$('.smooth-goto').on('click', function() {  
+  $('html, body').animate({scrollTop: $(this.hash).offset().top - 50}, 1000);
+  return false;
+});</script>
 
 
 <script src="lightbox.js"></script>

@@ -79,6 +79,34 @@ background-image: linear-gradient(blue,rgb(157, 157, 196));
     
     padding: 20px;
 }
+footer{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  
+  padding: 30px;
+  background-color: #555;
+  margin: 10px;
+}
+.footer3{
+list-style-type: none;
+margin: 0;
+padding: 0;
+
+justify-content: space-evenly;
+
+display: flex;
+justify-content: flex-end;
+ 
+  
+  
+}
+
+.footer3 li{
+  padding: 20px;
+}
+
 
 @media all and (max-width: 600px) {
   nav ul {
